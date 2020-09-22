@@ -71,16 +71,6 @@ public class ITSystemTest {
           + "       result: WikiResult  "
           + "   - returnOutput:  "
           + "      return: ${WikiResult.body[1]}  ";
-  //      "# This is a sample workflow, feel free to replace it with your source code\n#\n# This
-  // workflow does the following:\n# - reads current time and date information from an external API
-  // and stores\n#   the response in CurrentDateTime variable\n# - retrieves a list of Wikipedia
-  // articles related to the day of the week\n#   from CurrentDateTime\n# - returns the list of
-  // articles as an output of the workflow\n\n- getCurrentTime:\n    call: http.get\n    args:\n
-  //    url: https://us-central1-workflowsample.cloudfunctions.net/datetime\n    result:
-  // CurrentDateTime\n- readWikipedia:\n    call: http.get\n    args:\n        url:
-  // https://en.wikipedia.org/w/api.php\n        query:\n            action: opensearch\n
-  // search: ${CurrentDateTime.body.dayOfTheWeek}\n    result: WikiResult\n- returnOutput:\n
-  // return: ${WikiResult.body[1]}\n";
   private static WorkflowsClient client;
   private static Workflow expectedWorkflow;
 
