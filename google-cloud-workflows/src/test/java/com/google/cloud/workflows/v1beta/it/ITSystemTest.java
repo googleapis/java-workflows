@@ -119,8 +119,10 @@ public class ITSystemTest {
   public void testListWorkflows() {
     ListWorkflowsRequest request = ListWorkflowsRequest.newBuilder().setParent(PARENT).build();
     for (Workflow actualWorkflow : client.listWorkflows(request).iterateAll()) {
-      assertEquals(WORKFLOW_NAME, actualWorkflow.getName());
-      assertEquals(expectedWorkflow, actualWorkflow);
+      if (WORKFLOW_NAME.equals(actualWorkflow.getName())) {
+        assertEquals(WORKFLOW_NAME, actualWorkflow.getName());
+        assertEquals(expectedWorkflow, actualWorkflow);
+      }
     }
   }
 }
