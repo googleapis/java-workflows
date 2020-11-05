@@ -91,7 +91,7 @@ public class ITSystemTest {
 
   @AfterClass
   public static void tearDown() {
-    // Delete Test Worflow
+    // Delete Test Workflow
     DeleteWorkflowRequest deleteRequest =
         DeleteWorkflowRequest.newBuilder().setName(WORKFLOW_NAME).build();
     client.deleteWorkflowAsync(deleteRequest);
