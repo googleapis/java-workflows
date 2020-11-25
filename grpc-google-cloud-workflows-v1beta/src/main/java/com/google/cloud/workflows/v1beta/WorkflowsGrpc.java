@@ -22,15 +22,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * Workflows is used to deploy and execute workflow programs.
- * Workflows makes sure the program executes reliably, despite hardware and
- * networking interruptions.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/workflows/v1beta/workflows.proto")
@@ -301,25 +293,10 @@ public final class WorkflowsGrpc {
     return WorkflowsFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Workflows is used to deploy and execute workflow programs.
-   * Workflows makes sure the program executes reliably, despite hardware and
-   * networking interruptions.
-   * </pre>
-   */
+  /** */
   public abstract static class WorkflowsImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists Workflows in a given project and location.
-     * The default order is not specified.
-     * </pre>
-     */
+    /** */
     public void listWorkflows(
         com.google.cloud.workflows.v1beta.ListWorkflowsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.workflows.v1beta.ListWorkflowsResponse>
@@ -327,60 +304,28 @@ public final class WorkflowsGrpc {
       asyncUnimplementedUnaryCall(getListWorkflowsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets details of a single Workflow.
-     * </pre>
-     */
+    /** */
     public void getWorkflow(
         com.google.cloud.workflows.v1beta.GetWorkflowRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.workflows.v1beta.Workflow> responseObserver) {
       asyncUnimplementedUnaryCall(getGetWorkflowMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new workflow. If a workflow with the specified name already
-     * exists in the specified project and location, the long running operation
-     * will return [ALREADY_EXISTS][google.rpc.Code.ALREADY_EXISTS] error.
-     * </pre>
-     */
+    /** */
     public void createWorkflow(
         com.google.cloud.workflows.v1beta.CreateWorkflowRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getCreateWorkflowMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a workflow with the specified name.
-     * This method also cancels and deletes all running executions of the
-     * workflow.
-     * </pre>
-     */
+    /** */
     public void deleteWorkflow(
         com.google.cloud.workflows.v1beta.DeleteWorkflowRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteWorkflowMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates an existing workflow.
-     * Running this method has no impact on already running executions of the
-     * workflow. A new revision of the workflow may be created as a result of a
-     * successful update operation. In that case, such revision will be used
-     * in new workflow executions.
-     * </pre>
-     */
+    /** */
     public void updateWorkflow(
         com.google.cloud.workflows.v1beta.UpdateWorkflowRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -425,15 +370,7 @@ public final class WorkflowsGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Workflows is used to deploy and execute workflow programs.
-   * Workflows makes sure the program executes reliably, despite hardware and
-   * networking interruptions.
-   * </pre>
-   */
+  /** */
   public static final class WorkflowsStub extends io.grpc.stub.AbstractAsyncStub<WorkflowsStub> {
     private WorkflowsStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
@@ -444,14 +381,7 @@ public final class WorkflowsGrpc {
       return new WorkflowsStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists Workflows in a given project and location.
-     * The default order is not specified.
-     * </pre>
-     */
+    /** */
     public void listWorkflows(
         com.google.cloud.workflows.v1beta.ListWorkflowsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.workflows.v1beta.ListWorkflowsResponse>
@@ -462,13 +392,7 @@ public final class WorkflowsGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets details of a single Workflow.
-     * </pre>
-     */
+    /** */
     public void getWorkflow(
         com.google.cloud.workflows.v1beta.GetWorkflowRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.workflows.v1beta.Workflow> responseObserver) {
@@ -478,15 +402,7 @@ public final class WorkflowsGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new workflow. If a workflow with the specified name already
-     * exists in the specified project and location, the long running operation
-     * will return [ALREADY_EXISTS][google.rpc.Code.ALREADY_EXISTS] error.
-     * </pre>
-     */
+    /** */
     public void createWorkflow(
         com.google.cloud.workflows.v1beta.CreateWorkflowRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -496,15 +412,7 @@ public final class WorkflowsGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a workflow with the specified name.
-     * This method also cancels and deletes all running executions of the
-     * workflow.
-     * </pre>
-     */
+    /** */
     public void deleteWorkflow(
         com.google.cloud.workflows.v1beta.DeleteWorkflowRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -514,17 +422,7 @@ public final class WorkflowsGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates an existing workflow.
-     * Running this method has no impact on already running executions of the
-     * workflow. A new revision of the workflow may be created as a result of a
-     * successful update operation. In that case, such revision will be used
-     * in new workflow executions.
-     * </pre>
-     */
+    /** */
     public void updateWorkflow(
         com.google.cloud.workflows.v1beta.UpdateWorkflowRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -535,15 +433,7 @@ public final class WorkflowsGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Workflows is used to deploy and execute workflow programs.
-   * Workflows makes sure the program executes reliably, despite hardware and
-   * networking interruptions.
-   * </pre>
-   */
+  /** */
   public static final class WorkflowsBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<WorkflowsBlockingStub> {
     private WorkflowsBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -556,85 +446,38 @@ public final class WorkflowsGrpc {
       return new WorkflowsBlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists Workflows in a given project and location.
-     * The default order is not specified.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.workflows.v1beta.ListWorkflowsResponse listWorkflows(
         com.google.cloud.workflows.v1beta.ListWorkflowsRequest request) {
       return blockingUnaryCall(getChannel(), getListWorkflowsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets details of a single Workflow.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.workflows.v1beta.Workflow getWorkflow(
         com.google.cloud.workflows.v1beta.GetWorkflowRequest request) {
       return blockingUnaryCall(getChannel(), getGetWorkflowMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new workflow. If a workflow with the specified name already
-     * exists in the specified project and location, the long running operation
-     * will return [ALREADY_EXISTS][google.rpc.Code.ALREADY_EXISTS] error.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation createWorkflow(
         com.google.cloud.workflows.v1beta.CreateWorkflowRequest request) {
       return blockingUnaryCall(getChannel(), getCreateWorkflowMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a workflow with the specified name.
-     * This method also cancels and deletes all running executions of the
-     * workflow.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation deleteWorkflow(
         com.google.cloud.workflows.v1beta.DeleteWorkflowRequest request) {
       return blockingUnaryCall(getChannel(), getDeleteWorkflowMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates an existing workflow.
-     * Running this method has no impact on already running executions of the
-     * workflow. A new revision of the workflow may be created as a result of a
-     * successful update operation. In that case, such revision will be used
-     * in new workflow executions.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation updateWorkflow(
         com.google.cloud.workflows.v1beta.UpdateWorkflowRequest request) {
       return blockingUnaryCall(getChannel(), getUpdateWorkflowMethod(), getCallOptions(), request);
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Workflows is used to deploy and execute workflow programs.
-   * Workflows makes sure the program executes reliably, despite hardware and
-   * networking interruptions.
-   * </pre>
-   */
+  /** */
   public static final class WorkflowsFutureStub
       extends io.grpc.stub.AbstractFutureStub<WorkflowsFutureStub> {
     private WorkflowsFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -646,14 +489,7 @@ public final class WorkflowsGrpc {
       return new WorkflowsFutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists Workflows in a given project and location.
-     * The default order is not specified.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.workflows.v1beta.ListWorkflowsResponse>
         listWorkflows(com.google.cloud.workflows.v1beta.ListWorkflowsRequest request) {
@@ -661,13 +497,7 @@ public final class WorkflowsGrpc {
           getChannel().newCall(getListWorkflowsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets details of a single Workflow.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.workflows.v1beta.Workflow>
         getWorkflow(com.google.cloud.workflows.v1beta.GetWorkflowRequest request) {
@@ -675,47 +505,21 @@ public final class WorkflowsGrpc {
           getChannel().newCall(getGetWorkflowMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a new workflow. If a workflow with the specified name already
-     * exists in the specified project and location, the long running operation
-     * will return [ALREADY_EXISTS][google.rpc.Code.ALREADY_EXISTS] error.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         createWorkflow(com.google.cloud.workflows.v1beta.CreateWorkflowRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getCreateWorkflowMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a workflow with the specified name.
-     * This method also cancels and deletes all running executions of the
-     * workflow.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         deleteWorkflow(com.google.cloud.workflows.v1beta.DeleteWorkflowRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getDeleteWorkflowMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates an existing workflow.
-     * Running this method has no impact on already running executions of the
-     * workflow. A new revision of the workflow may be created as a result of a
-     * successful update operation. In that case, such revision will be used
-     * in new workflow executions.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         updateWorkflow(com.google.cloud.workflows.v1beta.UpdateWorkflowRequest request) {
       return futureUnaryCall(
