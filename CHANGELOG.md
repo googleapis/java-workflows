@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/googleapis/java-workflows/compare/v1.0.2...v1.1.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#303](https://www.github.com/googleapis/java-workflows/issues/303)) ([71cc7e7](https://www.github.com/googleapis/java-workflows/commit/71cc7e7dae2d7d8090307f1896e84771acc3a2cc))
+
 ### [1.0.2](https://www.github.com/googleapis/java-workflows/compare/v1.0.1...v1.0.2) (2021-07-01)
 
 
