@@ -1,5 +1,25 @@
 # Changelog
 
+## [2.2.1](https://github.com/googleapis/java-workflows/compare/v2.2.0...v2.2.1) (2022-06-23)
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.13.0 ([#462](https://github.com/googleapis/java-workflows/issues/462)) ([15bdfd9](https://github.com/googleapis/java-workflows/commit/15bdfd9dc5edbbd77a16de4d4fa6519a8f7117f3))
+
+## [2.2.0](https://github.com/googleapis/java-workflows/compare/v2.1.10...v2.2.0) (2022-05-24)
+
+
+### Features
+
+* add build scripts for native image testing in Java 17 ([#1440](https://github.com/googleapis/java-workflows/issues/1440)) ([#454](https://github.com/googleapis/java-workflows/issues/454)) ([5194c30](https://github.com/googleapis/java-workflows/commit/5194c303012675db89127e1581017ef7ecbda737))
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.11.0 ([#453](https://github.com/googleapis/java-workflows/issues/453)) ([8241724](https://github.com/googleapis/java-workflows/commit/824172473845135eee1853aa9d9ccac096182328))
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.12.0 ([#455](https://github.com/googleapis/java-workflows/issues/455)) ([3b68d9c](https://github.com/googleapis/java-workflows/commit/3b68d9ca4307fd34f913061363015decc73c1b23))
+
 ### [2.1.10](https://github.com/googleapis/java-workflows/compare/v2.1.9...v2.1.10) (2022-04-15)
 
 
