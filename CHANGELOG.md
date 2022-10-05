@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.6](https://github.com/googleapis/java-workflows/compare/v2.3.5...v2.3.6) (2022-10-05)
+
+
+### Bug Fixes
+
+* update protobuf to v3.21.7 ([1801fe6](https://github.com/googleapis/java-workflows/commit/1801fe649d6ed1dae397e16c25a7954099cfd56b))
+
 ## [2.3.5](https://github.com/googleapis/java-workflows/compare/v2.3.4...v2.3.5) (2022-10-03)
 
 
