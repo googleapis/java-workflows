@@ -73,7 +73,7 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-workflows-v1beta</artifactId>
-        <version>0.10.0</version><!-- {x-version-update:proto-google-cloud-workflows-v1beta:current} -->
+        <version>0.9.6</version><!-- {x-version-update:proto-google-cloud-workflows-v1beta:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
